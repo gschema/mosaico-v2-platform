@@ -21,6 +21,12 @@ To pull firebase environment variables into your local environment for testing:
     # firebase functions:config:get | ac .runtimeconfig.json
     firebase functions:shell
 
+### Instagram credentials
+
+To set instagram credentials for use in firebase functions, run the following with the proper Client ID and Secret:
+
+    firebase functions:config:set instagram.client_id="__client-id__" instagram.client_secret="__client-secret__" --project mosaico-v2
+
 ## 🚀 Deploy cloud functions
 
 If you would like to run an emulator locally to test your cloud functions, run the following:
